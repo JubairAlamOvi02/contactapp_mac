@@ -1,4 +1,6 @@
+import 'package:contactapp_mac/pages/contacrt_details_page.dart';
 import 'package:contactapp_mac/pages/contact_list_page.dart';
+import 'package:contactapp_mac/pages/new_contact_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +14,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
       home: ContactListPage(),
+      routes: {
+        ContactDetailsPage.routeName:(context) => ContactDetailsPage(),
+        ContactListPage.routeName:(context) => ContactListPage(),
+        NewContactPage.routeName:(context) => NewContactPage(),
+      },
     );
   }
 }
