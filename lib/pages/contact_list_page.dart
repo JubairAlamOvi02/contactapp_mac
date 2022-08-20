@@ -23,7 +23,7 @@ class _ContactListPageState extends State<ContactListPage> {
         onPressed: (){
           Navigator.pushNamed(context, NewContactPage.routeName);
         },
-        child: Icon(Icons.add),
+        child: Icon(Icons.person_add),
         tooltip: 'Add a new contact',
       ),
     );

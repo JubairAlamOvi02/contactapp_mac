@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
       ),
       home: ContactListPage(),
       routes: {
-        ContactDetailsPage.routeName:(context) => ContactDetailsPage(),
-        ContactListPage.routeName:(context) => ContactListPage(),
-        NewContactPage.routeName:(context) => NewContactPage(),
+        ContactListPage.routeName:(context) =>ContactListPage(),
+        NewContactPage.routeName:(context) =>NewContactPage(),
+        ContactDetailsPage.routeName:(context) =>ContactDetailsPage(),
       },
     );
   }
