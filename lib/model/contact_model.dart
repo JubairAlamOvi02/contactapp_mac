@@ -1,3 +1,8 @@
+const String tblContact = 'tbl_contact';
+const String tblContacid ='id';
+const String tblContacName ='name';
+const String tblContacPhoneNumber ='phoneNumber';
+
 class ContactModel{
   int? id;
    String name;
